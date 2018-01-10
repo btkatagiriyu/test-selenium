@@ -22,3 +22,5 @@ script:
   - mvn -U install -Dmaven.test.skip=true
   - mvn -U cargo:daemon-start
   - mvn -U test
+
+
