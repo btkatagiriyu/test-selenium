@@ -10,7 +10,7 @@ cache:
   directories:
     - $HOME/.m2
 
-before_install: sudo sh -c 'echo "127.0.0.1" >> /etc/hosts'
+before_install: sudo sh -c 'echo "127.0.0.1	localhost" >> /etc/hosts'
 
 install:
   - export CARGO_DAEMON_WEBAPP_VERSION=1.6.2
