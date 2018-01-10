@@ -23,4 +23,7 @@ script:
   - mvn -U cargo:daemon-start
   - mvn -U test
 
+addons:
+  hosts:
+    - 127.0.0.1 localhost
 
