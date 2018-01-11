@@ -16,7 +16,7 @@ public class HelloControllerTest {
         profile.setPreference(FirefoxProfile.ALLOWED_HOSTS_PREFERENCE, "localhost");
         
         FirefoxDriver driver = new FirefoxDriver(profile);
-        driver.get("http://localhost:8080");
+        driver.get("http://localhost:8080/test-selenium/");
 
         assertThat(driver.findElementByTagName("h1").getText(), is("Hello world!"));
         
