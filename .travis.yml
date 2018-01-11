@@ -1,4 +1,4 @@
-sudo: true
+sudo: false
 language: java
 jdk:
   - oraclejdk8
@@ -10,6 +10,8 @@ cache:
 
 install:
   - export CARGO_DAEMON_WEBAPP_VERSION=1.6.2
+
+before_install: sudo sh -c 'echo "127.0.0.1 localhost" >> /etc/hosts'
 
 before_script:
   - cat /etc/hosts
